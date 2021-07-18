@@ -1,0 +1,2 @@
+rootProject.name = "andersen_home_work_2_view"
+include ':app'
