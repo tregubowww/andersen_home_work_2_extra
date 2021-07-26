@@ -7,15 +7,17 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var counterTextView: TextView
     private lateinit var buttonIncrement: Button
-    private var counter: Int = 0
+    private var counter = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         initView()
         initClickListeners()
-
     }
 
     private fun initClickListeners() {

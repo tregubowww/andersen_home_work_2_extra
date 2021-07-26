@@ -5,13 +5,15 @@ import android.os.Bundle
 import android.widget.TextView
 
 class CounterActivity : AppCompatActivity() {
+
     private lateinit var counterTextView: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_counter)
 
         counterTextView = findViewById(R.id.counterTextView)
-        counterTextView.text = intent.getIntExtra(KEY_COUNTER, 0).toString()
+        counterTextView.text = "${intent.getIntExtra(KEY_COUNTER, 0)}"
     }
 
     companion object {
